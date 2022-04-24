@@ -6,7 +6,14 @@
     "type": "project",
     "require": {
         "php": "^8.0",
-        "laravel/lumen-framework": "^9.0"
+        "doctrine/dbal": "^3.3",
+        "dusterio/lumen-passport": "^0.3.5",
+        "flipbox/lumen-generator": "^9.1",
+        "fruitcake/laravel-cors": "^3.0",
+        "guzzlehttp/guzzle": "^7.4",
+        "illuminate/mail": "^9.9",
+        "laravel/lumen-framework": "^9.0",
+        "ramsey/uuid": "^4.3"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

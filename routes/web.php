@@ -13,6 +13,18 @@
 |
 */
 
+$router->get('/key', function() {
+    return \Illuminate\Support\Str::random(32);
+});
+
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    return "Hi";
+});
+
+$router->group(['prefix' => 'kazantv/api'], function ($router) {
+    $router->post('login', 'AuthController@login');
+    $router->post('verify', 'AuthController@verify');
+    $router->post('set-pin', 'AuthController@setPin');
+    $router->post('register', 'AuthController@create');
+    $router->post('resend-pin', 'AuthController@resendPin');
 });
