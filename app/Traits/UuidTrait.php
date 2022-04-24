@@ -1,7 +1,7 @@
 <?php
 namespace App\Traits;
 use Illuminate\Support\Str;
-trait UuidTraits
+trait UuidTrait
 {
     /**
      * The "booting" method of the model, This help to magically create uuid for all new models

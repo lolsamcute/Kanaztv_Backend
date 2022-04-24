@@ -9,11 +9,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Lumen\Auth\Authorizable;
 use Laravel\Passport\HasApiTokens;
-use App\Traits\UuidTraits;
+use App\Traits\UuidTrait;
 
 class User extends Model implements AuthenticatableContract, AuthorizableContract
 {
-    use HasApiTokens, Authenticatable, Authorizable, HasFactory, UuidTraits;
+    use HasApiTokens, Authenticatable, Authorizable, HasFactory, UuidTrait;
 
 
     // protected $guarded = ['id'];
